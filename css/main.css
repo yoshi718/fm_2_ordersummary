@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+    --BORDER-RADIUS: 20px;
+}
+
+/* || GENERAL  */
+
+.images {
+    width: 100%;
+    border-radius: var(--BORDER-RADIUS) var(--BORDER-RADIUS) 0 0;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+}
+
+.main {
+    background-color: white;
+    width: 355px;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+h1,
+p {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    margin: 20px 40px;
+}
+
+h1 { 
+    font-size: 1.9rem;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.flex-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.flex-section > * {
+    margin: 0 10px;
+}
+
+.flex-section > p {
+    line-height: 1.3rem ;
+}
+
+.ap {
+    font-weight: 900;
+    color: black;
+}
+
+.change {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.change:active {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.btn {
+    display: block;
+    margin: 25px auto;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    padding: 15px 70px;
+    border-radius: var(--BORDER-RADIUS);
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: hsl(224, 51%, 50%);
+}
+
+.a-cancel {
+    display: inline-block;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.a-cancel:active {
+    color: black;
+}
